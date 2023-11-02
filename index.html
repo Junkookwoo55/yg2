@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        background-image: url("banner.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: gold;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+</style>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .card {
+        margin: 20px;
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Cards</title>
+    <style>
+        .card {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 100px;
+            height: 150px;
+        }
+        
+        .details {
+            display: none;
+            text-align: left;
+        }
+    </style>
+</head>
+<body><h1>Art 356 Project 2</h1>
+
+<div id="cards-container">
+    
+    <div class="card">
+        <img src="Dark Magician.jpg" alt="Dark Magician">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Dark Magician</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 7</p>
+            <p><strong>Attribute:</strong> DARK</p>
+            <p><strong>Monster Type:</strong> Spellcaster</p>
+            <p><strong>ATK:</strong> 2500</p>
+            <p><strong>DEF:</strong> 2100</p>
+            <p><strong>Description:</strong> The ultimate wizard in terms of attack and defense.</p>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="Blue-Eyes White Dragon.jpg" alt="Blue-Eyes White Dragon">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Blue-Eyes White Dragon</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 8</p>
+            <p><strong>Attribute:</strong> LIGHT</p>
+            <p><strong>Monster Type:</strong> Dragon</p>
+            <p><strong>ATK:</strong> 3000</p>
+            <p><strong>DEF:</strong> 2500</p>
+            <p><strong>Description:</strong> This legendary dragon is a powerful engine of destruction.</p>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="Red-Eyes Black Dragon.jpg" alt="Red-Eyes Black Dragon">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Red-Eyes Black Dragon</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 7</p>
+            <p><strong>Attribute:</strong> DARK</p>
+            <p><strong>Monster Type:</strong> Dragon</p>
+            <p><strong>ATK:</strong> 2400</p>
+            <p><strong>DEF:</strong> 2000</p>
+            <p><strong>Description:</strong> A ferocious dragon with a deadly attack.</p>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="Summoned Skull.jpg" alt="Summoned Skull">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Summoned Skull</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 6</p>
+            <p><strong>Attribute:</strong> DARK</p>
+            <p><strong>Monster Type:</strong> Fiend</p>
+            <p><strong>ATK:</strong> 2500</p>
+            <p><strong>DEF:</strong> 1200</p>
+            <p><strong>Description:</strong> A fiend with dark powers for confusing the enemy.</p>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="Exodia the Forbidden One.jpg" alt="Exodia the Forbidden One">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Exodia the Forbidden One</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 3</p>
+            <p><strong>Attribute:</strong> DARK</p>
+            <p><strong>Monster Type:</strong> Spellcaster</p>
+            <p><strong>ATK:</strong> 1000</p>
+            <p><strong>DEF:</strong> 1000</p>
+            <p><strong>Description:</strong> An automatic victory can be declared by the player whose hand contains this card.</p>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="Man-Eater Bug.jpg" alt="Man-Eater Bug">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Man-Eater Bug</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 2</p>
+            <p><strong>Attribute:</strong> EARTH</p>
+            <p><strong>Monster Type:</strong> Insect</p>
+            <p><strong>ATK:</strong> 450</p>
+            <p><strong>DEF:</strong> 600</p>
+            <p><strong>Description:</strong> FLIP: Target 1 monster on the field; destroy that target.</p>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <img src="Kuriboh.jpg" alt="Kuriboh">
+        <button onclick="toggleDetails(this)">Toggle Details</button>
+        <div class="details" style="display:none;">
+            <p><strong>Name:</strong> Kuriboh</p>
+            <p><strong>Type:</strong> Monster</p>
+            <p><strong>Level/Rank:</strong> 1</p>
+            <p><strong>Attribute:</strong> DARK</p>
+            <p><strong>Monster Type:</strong> Fiend</p>
+            <p><strong>ATK:</strong> 300</p>
+            <p><strong>DEF:</strong> 200</p>
+            <p><strong>Description:</strong> During your opponent's turn, at damage calculation: You can discard this card.</p>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    const cardsData = [['Dark Magician', 'Monster', 7, 'DARK', 'Spellcaster', 2500, 2100, 'The ultimate wizard in terms of attack and defense.'], ['Blue-Eyes White Dragon', 'Monster', 8, 'LIGHT', 'Dragon', 3000, 2500, 'This legendary dragon is a powerful engine of destruction.'], ['Red-Eyes Black Dragon', 'Monster', 7, 'DARK', 'Dragon', 2400, 2000, 'A ferocious dragon with a deadly attack.'], ['Summoned Skull', 'Monster', 6, 'DARK', 'Fiend', 2500, 1200, 'A fiend with dark powers for confusing the enemy.'], ['Exodia the Forbidden One', 'Monster', 3, 'DARK', 'Spellcaster', 1000, 1000, 'An automatic victory can be declared by the player whose hand contains this card.'], ['Man-Eater Bug', 'Monster', 2, 'EARTH', 'Insect', 450, 600, 'FLIP: Target 1 monster on the field; destroy that target.'], ['Kuriboh', 'Monster', 1, 'DARK', 'Fiend', 300, 200, "During your opponent's turn, at damage calculation: You can discard this card."]];
+
+    const cardsContainer = document.getElementById('cards-container');
+
+    cardsData.forEach(card => {
+        const cardDiv = document.createElement('div');
+        cardDiv.className = 'card';
+        
+        const cardButton = document.createElement('button');
+        cardButton.onclick = () => {
+            cardDetails.style.display = cardDetails.style.display === 'none' ? 'block' : 'none';
+        };
+        
+        const cardImage = document.createElement('img');
+        cardImage.src = 'path_to_your_images/' + card[0].replace(/ /g, '_') + '.jpeg'; // Placeholders for JPEG images
+        cardButton.appendChild(cardImage);
+        
+        const cardDetails = document.createElement('div');
+        cardDetails.className = 'details';
+        cardDetails.innerHTML = \`<b>Card Name:</b> ${card[0]}<br><b>Card Type:</b> ${card[1]}<br><b>Level/Rank:</b> ${card[2]}<br><b>Attribute:</b> ${card[3]}<br><b>Monster Type:</b> ${card[4]}<br><b>ATK:</b> ${card[5]}<br><b>DEF:</b> ${card[6]}<br><b>Card Description:</b> ${card[7]}\`;
+        
+        cardDiv.appendChild(cardButton);
+        cardDiv.appendChild(cardDetails);
+        cardsContainer.appendChild(cardDiv);
+    });
+</script>
+
+
+<script>
+    function toggleDetails(button) {
+        const detailsDiv = button.nextElementSibling;
+        if (detailsDiv.style.display === "none" || detailsDiv.style.display === "") {
+            detailsDiv.style.display = "block";
+        } else {
+            detailsDiv.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
+
+<div style="position: fixed; bottom: 0; width: 100%; text-align: center; font-size: small;">
+    <a href="https://yugioh.fandom.com/wiki/Basics_of_Monster_Cards" target="_blank" style="color: gold;">https://yugioh.fandom.com/wiki/Basics_of_Monster_Cards</a>
+
+</div>
